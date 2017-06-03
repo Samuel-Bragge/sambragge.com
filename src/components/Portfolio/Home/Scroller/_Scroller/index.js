@@ -47,8 +47,9 @@ export default class _Scroller {
 
     start(){
         let self = this;
-        let loop = setInterval(()=>{self.tick(self)});
+        setInterval(()=>{self.tick(self)});
     }
+
 
 
 }
