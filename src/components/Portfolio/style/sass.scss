@@ -1,0 +1,96 @@
+$color:rgba(lightblue, .3);
+$section_height:400px;
+$socialImgSize:150px;
+
+.Portfolio {
+    width:100%;
+    box-shadow: 5px 5px 15px black;
+   .Header {
+       position: relative;
+       p{
+           color:rgba(white, .5);
+       }
+       box-shadow: 5px 5px 25px black;
+       height:$section_height;
+       background: url('./../images/img4.jpg');
+       .Scroller {
+           height:50px;
+           width: 100%;
+           background-color: black;
+       }
+
+
+
+       .github {
+           img {
+               height:$socialImgSize;
+               width:$socialImgSize;
+           }
+       }
+       .linkedin {
+           img {
+               height:$socialImgSize;
+               width:$socialImgSize;
+           }
+       }
+       .googleplus {
+           img {
+               height:$socialImgSize;
+               width:$socialImgSize;
+           }
+       }
+
+
+       .github, .linkedin, .googleplus {
+           img {
+               &:hover {
+                   box-shadow: inset 0 0 25px black;
+                   background: rgba(green, .3)
+               }
+               margin-top: 25%;
+               box-shadow: 5px 5px 25px black;
+               border-radius: 50%;
+           }
+           text-align: center;
+           cursor: pointer;
+           height:300px;
+           width:250px;
+           background-size: cover;
+       }
+
+   }
+
+   .Body {
+       z-index: -1;
+       padding:10px;
+       height:$section_height;
+       background: url('./../images/img3.jpg');
+       background-position: center;
+       background-attachment: fixed;
+       .bio {
+          background:$color;
+          border:3px ridge $color;
+          display: inline-block;
+          height:90%;
+          width:500px;
+          float:right;
+      }
+      .pic {
+          background: url('./../images/pic.png');
+          background-size: cover;
+          border-radius: 50%;
+          display: inline-block;
+          height:300px;
+          width:300px;
+      }
+   }
+
+   .Footer {
+       height:$section_height;
+       box-shadow: inset 0 0 50px black;
+       background: url('./../images/commingSoon.jpg');
+       background-size: cover;
+       background-attachment: fixed;
+
+   }
+}
