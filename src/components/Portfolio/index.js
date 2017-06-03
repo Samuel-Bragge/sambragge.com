@@ -9,7 +9,7 @@ import './style/index.css';
 export default class Portfolio extends React.Component {
     render(){
         return(
-            <div className="Portfolio container">
+            <div className="Portfolio">
                 <Header/>
                 <Body/>
                 <Footer/>
