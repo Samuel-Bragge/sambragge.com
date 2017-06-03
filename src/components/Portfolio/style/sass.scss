@@ -10,9 +10,12 @@ body {
 
     box-shadow: 5px 5px 15px black;
    .Header {
-       h1, h2 {
-           color:rgba(white, .5);
-           font-family: monospace;
+       .title {
+           margin-top: 5%;
+           * {
+               color:rgba(white, .5);
+               font-family: monospace;
+           }
        }
        text-align: center;
        box-shadow: 5px 5px 25px black;
@@ -52,9 +55,12 @@ body {
    .Footer {
        height:$section_height;
        background: url('./../images/img4.jpg');
-       p{
-           font-size: 20px;
-           color:rgba(white, .5);
+       .contactInfo {
+           p{
+               margin-top: 5%;
+               font-size: 20px;
+               color:rgba(white, .5);
+           }
        }
        .github {
            img {

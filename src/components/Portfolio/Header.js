@@ -8,8 +8,10 @@ export default class Header extends React.Component {
         return(
             <div className="Header row">
                 <Scroller/>
-                <h1>Samuel Bragge</h1>
-                <h2>Full Stack Web Developer</h2>
+                <div className="title">
+                    <h1>Samuel Bragge</h1>
+                    <h2>Full Stack Web Developer</h2>
+                </div>
             </div>
         );
     }
