@@ -16,7 +16,7 @@ body {
        }
        text-align: center;
        box-shadow: 5px 5px 25px black;
-       height:$section_height/2;
+       height:$section_height;
        background: url('./../images/img4.jpg');
        .Scroller {
            height:50px;
@@ -50,9 +50,10 @@ body {
    }
 
    .Footer {
-       height:$section_height/1.5;
+       height:$section_height;
        background: url('./../images/img4.jpg');
        p{
+           font-size: 20px;
            color:rgba(white, .5);
        }
        .github {
