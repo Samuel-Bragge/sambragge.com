@@ -1,8 +1,6 @@
 import React from 'react';
+import {capitalize} from './helperFunctions';
 
-let capital = (string)=>{
-    return string.charAt(0).toUpperCase()+string.slice(1);
-}
 
 
 export default class Navbar extends React.Component {
@@ -17,9 +15,9 @@ export default class Navbar extends React.Component {
 
         let navs = this.navs.map((nav, i)=>{
             if(this.props.router.current === nav){
-                return <div className="navItem currentPage" key={'nav'+i+1} id={nav} onClick={this.handleClick.bind(this)}>{capital(nav)}</div>
+                return <div className="navItem currentPage" key={'nav'+i+1} id={nav} onClick={this.handleClick.bind(this)}>{capitalize(nav)}</div>
             }else{
-                return <div className="navItem" key={'nav'+i+1} id={nav} onClick={this.handleClick.bind(this)}>{capital(nav)}</div>
+                return <div className="navItem" key={'nav'+i+1} id={nav} onClick={this.handleClick.bind(this)}>{capitalize(nav)}</div>
             }
         });
 

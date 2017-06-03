@@ -9,11 +9,13 @@ body {
 .Portfolio {
     box-shadow: 5px 5px 15px black;
     .Navbar {
+        height:35px;
         text-align: right;
         .navItem {
             padding:5px;
             display: inline-block;
             cursor: pointer;
+            height:100%;
         }
         .currentPage {
             background: rgba(green, .3);
@@ -98,7 +100,7 @@ body {
                 img {
                     &:hover {
                         box-shadow: inset 0 0 25px black;
-                        background: rgba(green, .3)
+                        background: rgba(green, .5)
                     }
                     margin-top: 25%;
                     box-shadow: 5px 5px 25px black;
@@ -117,9 +119,44 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         padding:5px;
-        text-align: center;
         font-family: "Times new Roman";
         height:$section_height*2;
         color:rgba(white, .5);
+        .GameManager {
+            padding:10px;
+            border:1px dotted red;
+            .GMNavbar {
+                background: linear-gradient(to top right, silver, gray);
+                color:black;
+                .currentPage {
+                    background: rgba(green, .3);
+                    box-shadow: 0 0 50px rgba(green, .3);
+                }
+                .gmNavItem {
+                    padding:5px;
+                    display: inline-block;
+                    cursor: pointer;
+
+                    width:100%;
+                }
+                border:1px dotted green;
+                width:10%;
+                height:100%;
+                display: inline-block;
+            }
+            .gameContainer {
+                display: inline-block;
+                border:1px dotted orange;
+                padding:5px;
+                // width:89%;
+                .Game {
+                    border:1px dotted red;
+                    height:390px;;
+                    // width:420px;
+                    background: $color;
+                }
+            }
+            height:$section_height;
+        }
     }
 }

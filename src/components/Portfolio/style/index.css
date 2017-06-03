@@ -4,11 +4,13 @@ body {
 .Portfolio {
   box-shadow: 5px 5px 15px black; }
   .Portfolio .Navbar {
+    height: 35px;
     text-align: right; }
     .Portfolio .Navbar .navItem {
       padding: 5px;
       display: inline-block;
-      cursor: pointer; }
+      cursor: pointer;
+      height: 100%; }
     .Portfolio .Navbar .currentPage {
       background: rgba(0, 128, 0, 0.3);
       box-shadow: 0 0 50px rgba(0, 128, 0, 0.3); }
@@ -71,15 +73,41 @@ body {
         border-radius: 50%; }
         .Portfolio .Home .Footer .github img:hover, .Portfolio .Home .Footer .linkedin img:hover, .Portfolio .Home .Footer .googleplus img:hover {
           box-shadow: inset 0 0 25px black;
-          background: rgba(0, 128, 0, 0.3); }
+          background: rgba(0, 128, 0, 0.5); }
   .Portfolio .Work {
     background: url("./../images/commingSoon.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     padding: 5px;
-    text-align: center;
     font-family: "Times new Roman";
     height: 800px;
     color: rgba(255, 255, 255, 0.5); }
+    .Portfolio .Work .GameManager {
+      padding: 10px;
+      border: 1px dotted red;
+      height: 400px; }
+      .Portfolio .Work .GameManager .GMNavbar {
+        background: linear-gradient(to top right, silver, gray);
+        color: black;
+        border: 1px dotted green;
+        width: 10%;
+        height: 100%;
+        display: inline-block; }
+        .Portfolio .Work .GameManager .GMNavbar .currentPage {
+          background: rgba(0, 128, 0, 0.3);
+          box-shadow: 0 0 50px rgba(0, 128, 0, 0.3); }
+        .Portfolio .Work .GameManager .GMNavbar .gmNavItem {
+          padding: 5px;
+          display: inline-block;
+          cursor: pointer;
+          width: 100%; }
+      .Portfolio .Work .GameManager .gameContainer {
+        display: inline-block;
+        border: 1px dotted orange;
+        padding: 5px; }
+        .Portfolio .Work .GameManager .gameContainer .Game {
+          border: 1px dotted red;
+          height: 390px;
+          background: rgba(173, 216, 230, 0.3); }
 
 /*# sourceMappingURL=index.css.map */
