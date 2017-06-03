@@ -8,12 +8,8 @@ export default class Header extends React.Component {
         return(
             <div className="Header row">
                 <Scroller/>
-                <div className="github four columns"><a href="https://github.com/Samuel-Bragge"><img src={require('./images/github.png')} /></a></div>
-                <div className="linkedin four columns"><a href="https://www.linkedin.com/in/samuel-bragge/"><img src={require('./images/linkedin.png')} /></a></div>
-                <div className="googleplus four columns"><a href="https://plus.google.com/+SamuelBragge"><img src={require('./images/googleplus.png')} /></a></div>
-
-                <p className="phoneNumber u-pull-left">650-773-7190</p>
-                <p className="email u-pull-right">sambragge@gmail.com</p>
+                <h1>Samuel Bragge</h1>
+                <h2>Full Stack Web Developer</h2>
             </div>
         );
     }
