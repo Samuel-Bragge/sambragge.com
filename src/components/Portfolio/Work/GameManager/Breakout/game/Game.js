@@ -115,7 +115,7 @@ export default class Game {
                     self.ball.dy = -self.ball.dy;
                     b.status = 0;
                     self.scoreboard.add('score', 1);
-                    if(self.scoreboard.score == self.brick.colCount*self.brick.rowCount){
+                    if(self.scoreboard.score === self.brick.colCount*self.brick.rowCount){
                         self.scoreboard.win();
                     }
                 }

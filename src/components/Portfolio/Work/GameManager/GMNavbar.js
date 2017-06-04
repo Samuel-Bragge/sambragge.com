@@ -35,7 +35,7 @@ export default class GMNavbar extends React.Component {
 
 
     handleClick(e){
-        if(e.target.id == 'breakout'){
+        if(e.target.id === 'breakout'){
             this.props.router.go('breakout');
         }
     }

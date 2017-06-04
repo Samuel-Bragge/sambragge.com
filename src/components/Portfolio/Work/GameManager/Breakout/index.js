@@ -16,7 +16,7 @@ export default class Breakout extends Component {
 
     render(){
         return(
-            <div className="Game">
+            <div className="Game eleven columns">
                 <canvas id="breakoutCanvas"/>
             </div>
         );

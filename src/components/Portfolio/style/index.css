@@ -84,12 +84,10 @@ body {
     color: rgba(255, 255, 255, 0.5); }
     .Portfolio .Work .GameManager {
       padding: 10px;
-      border: 1px dotted red;
       height: 400px; }
       .Portfolio .Work .GameManager .GMNavbar {
         background: linear-gradient(to top right, silver, gray);
         color: black;
-        border: 1px dotted green;
         width: 10%;
         height: 100%;
         display: inline-block; }
@@ -101,13 +99,34 @@ body {
           display: inline-block;
           cursor: pointer;
           width: 100%; }
-      .Portfolio .Work .GameManager .gmWindow {
+      .Portfolio .Work .GameManager .GameWindow {
         display: inline-block;
-        border: 1px dotted orange;
-        padding: 5px; }
-        .Portfolio .Work .GameManager .gmWindow .Game {
-          border: 1px dotted red;
+        padding: 5px;
+        height: 100%; }
+        .Portfolio .Work .GameManager .GameWindow .infoWrapper {
+          padding: 10px;
+          background: rgba(173, 216, 230, 0.3);
+          border: 1px dotted red; }
+        .Portfolio .Work .GameManager .GameWindow .Game {
+          display: inline-block;
           height: 390px;
           background: rgba(173, 216, 230, 0.3); }
+        .Portfolio .Work .GameManager .GameWindow .Nav {
+          vertical-align: top;
+          display: inline-block;
+          height: 100%; }
+          .Portfolio .Work .GameManager .GameWindow .Nav .currentPage {
+            background: rgba(173, 216, 230, 0.3);
+            box-shadow: 0 0 50px rgba(173, 216, 230, 0.3); }
+          .Portfolio .Work .GameManager .GameWindow .Nav div {
+            border-radius: 10%;
+            margin-top: 5px;
+            text-align: center;
+            padding: 5px;
+            font-size: 26px;
+            height: 45%;
+            cursor: pointer; }
+            .Portfolio .Work .GameManager .GameWindow .Nav div:hover {
+              box-shadow: inset 0 0 20px black; }
 
 /*# sourceMappingURL=index.css.map */
