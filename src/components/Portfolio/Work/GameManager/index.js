@@ -1,6 +1,6 @@
 import React from 'react';
 import GMNav from './GMNavbar';
-import Breakout from './Breakout';
+import GMWindow from './GMWindow';
 
 export default class GameManager extends React.Component {
 
@@ -18,14 +18,19 @@ export default class GameManager extends React.Component {
     }
 
     render(){
-        return(
-            <div className="GameManager row">
-                <GMNav router={this.router}/>
-                <div className="gameContainer ten columns">
-                    <Breakout/>
+
+        let r;
+        if(this.router.current === 'breakout'){
+            r = (
+                <div className="GameManager row">
+                    <GMNav router={this.router}/>
+                    <GMWindow game="breakout"/>
                 </div>
-            </div>
-        );
+            );
+        }
+
+
+        return r;
     }
 
 }

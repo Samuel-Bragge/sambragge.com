@@ -6,6 +6,7 @@ export default class Work extends React.Component {
         return(
             <div className="Work">
                 <h1>My Work</h1>
+
                 <h2>Games</h2>
                 <GameManager/>
             </div>

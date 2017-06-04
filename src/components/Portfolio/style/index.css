@@ -101,11 +101,11 @@ body {
           display: inline-block;
           cursor: pointer;
           width: 100%; }
-      .Portfolio .Work .GameManager .gameContainer {
+      .Portfolio .Work .GameManager .gmWindow {
         display: inline-block;
         border: 1px dotted orange;
         padding: 5px; }
-        .Portfolio .Work .GameManager .gameContainer .Game {
+        .Portfolio .Work .GameManager .gmWindow .Game {
           border: 1px dotted red;
           height: 390px;
           background: rgba(173, 216, 230, 0.3); }
