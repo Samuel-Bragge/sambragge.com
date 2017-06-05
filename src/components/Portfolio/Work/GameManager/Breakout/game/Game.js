@@ -5,7 +5,7 @@ import ScoreBoard from './assets/ScoreBoard';
 
 export default class Game {
 
-    constructor(canvas){
+    constructor(canvas, on){
         this.canvas = canvas;
         this.ctx = canvas.getContext('2d');
         this.canvas.height = this.ctx.canvas.parentNode.clientHeight;
@@ -21,26 +21,33 @@ export default class Game {
 
 
         document.addEventListener('keydown', (e)=>{
-            if(e.key === 'p'){
-                this.pause();
+            if(on){
+                if(e.key === 'p'){
+                    this.pause();
 
-            }else if(e.keyCode === 39){
-                this.rightPressed = true;
-            }else if(e.keyCode === 37){
-                this.leftPressed = true;
+                }else if(e.keyCode === 39){
+                    this.rightPressed = true;
+                }else if(e.keyCode === 37){
+                    this.leftPressed = true;
+                }
             }
         });
         document.addEventListener('keyup', (e)=>{
-            if(e.keyCode === 39){
-                this.rightPressed = false;
-            }else if(e.keyCode === 37){
-                this.leftPressed = false;
+            if(on){
+                if(e.keyCode === 39){
+                    this.rightPressed = false;
+                }else if(e.keyCode === 37){
+                    this.leftPressed = false;
+                }
             }
+
         });
         document.addEventListener('mousemove', (e)=>{
-            var relativeX = e.clientX - this.canvas.offsetLeft;
-            if(relativeX > 0 && relativeX < this.canvas.width){
-                this.paddle.x = relativeX-this.paddle.w;
+            if(on){
+                var relativeX = e.clientX - this.canvas.offsetLeft;
+                if(relativeX > 0 && relativeX < this.canvas.width){
+                    this.paddle.x = relativeX-this.paddle.w;
+                }
             }
         });
     }

@@ -23,13 +23,6 @@ export default class Nav extends React.Component {
 
 
     handleClick(e){
-        console.log("e is ", e);
-        console.log("click working");
-        console.log("e.target is", e.target);
-        if(e.target.id === 'game'){
-            this.props.router.go('game');
-        }else if(e.target.id === 'info'){
-            this.props.router.go('info');
-        }
+        this.props.router.go(e.target.id);
     }
 }

@@ -4,13 +4,13 @@ import Game from './game/Game';
 export default class Breakout extends Component {
 
     componentDidMount(){
+        this.on = true;
         let canvas = document.getElementById('breakoutCanvas');
-        this.game = new Game(canvas);
-
-        this.game.start();
+        let game = new Game(canvas, this.on);
+        game.start();
     }
     componentWillUnmount(){
-        this.game = null;
+        this.on = false;
     }
 
 

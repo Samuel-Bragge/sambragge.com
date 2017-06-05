@@ -1,6 +1,4 @@
-let cap = (string)=>{
-    return string.charAt(0).toUpperCase()+string.slice(1);
-}
+import {capitalize} from './../../../helperFunctions';
 
 export default class Word {
     constructor(name, x){
@@ -16,7 +14,7 @@ export default class Word {
     draw(_){
         _.font = this.font;
         _.strokeStyle = this.c;
-        _.strokeText(cap(this.name), this.x, this.y);
+        _.strokeText(capitalize(this.name), this.x, this.y);
         this.x += 1;
         if(this.x > _.canvas.width){
             this.done = true;

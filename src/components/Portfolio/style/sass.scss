@@ -1,5 +1,5 @@
 $color:rgba(lightblue, .3);
-$section_height:400px;
+$section_height:500px;
 $socialImgSize:150px;
 
 body {
@@ -54,6 +54,19 @@ body {
             .bio {
                display: inline-block;
                height:90%;
+               border:5px ridge $color;
+               padding:10px;
+               background: rgba(beige, .5);
+               border-radius: 10px;
+               p {
+                   text-indent: 75px;
+                   margin-top: 15%;
+                   align-self: baseline;
+                   font:{
+                       size:22px;
+                       family:Times;
+                   }
+               }
            }
            .pic {
                background: url('./../images/pic.png');
@@ -63,19 +76,21 @@ body {
                height:350px;
                width:350px;
                box-shadow: 0 0 20px lightblue;
+               margin-top: 5%;
            }
         }
 
         .Footer {
             height:$section_height;
             background: url('./../images/img4.jpg');
-            .contactInfo {
-                p{
-                    margin-top: 5%;
-                    font-size: 20px;
-                    color:rgba(white, .5);
-                }
+
+            p{
+                display: inline-block;
+                margin-top: $section_height/2;
+                font-size: 20px;
+                color:rgba(white, .5);
             }
+
             .github {
                 img {
                     height:$socialImgSize;
@@ -102,7 +117,7 @@ body {
                         box-shadow: inset 0 0 25px black;
                         background: rgba(green, .5)
                     }
-                    margin-top: 25%;
+                    margin-top: 35%;
                     box-shadow: 5px 5px 25px black;
                     border-radius: 50%;
                 }
@@ -117,14 +132,18 @@ body {
     .Work {
         background: url('./../images/commingSoon.jpg');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        background-attachment: fixed;
         padding:5px;
         font-family: "Times new Roman";
         height:$section_height*2;
         color:rgba(white, .5);
         .GameManager {
+            background: url('./../images/img4.jpg');
+            box-shadow: 5px 5px 20px $color;
             padding:10px;
             .GMNavbar {
+                box-shadow: inset 0 0 15px black;
                 background: linear-gradient(to top right, silver, gray);
                 color:black;
                 .currentPage {
@@ -149,15 +168,17 @@ body {
                 .infoWrapper {
                     padding:10px;
                     background: $color;
-                    border:1px dotted red;
                 }
                 .Game {
+                    box-shadow: inset 0 0 15px black;
                     display: inline-block;
-                    height:390px;;
-
+                    height:100%;
+                    cursor: none;
                     background: $color;
                 }
                 .Nav {
+                    background: $color;
+                    box-shadow: inset 0 0 15px black;
                     vertical-align: top;
                     display: inline-block;
                     height:100%;
@@ -166,13 +187,12 @@ body {
                         box-shadow: 0 0 50px $color;
                     }
                     div{
-                        border-radius: 10%;
                         margin-top: 5px;
                         text-align: center;
                         padding:5px;
                         font-size: 26px;
                         &:hover{
-                            box-shadow: inset 0 0 20px black;
+                            box-shadow: 0 0 50px $color;
                         }
                         height:45%;
                         cursor:pointer;
