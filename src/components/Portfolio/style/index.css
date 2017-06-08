@@ -1,150 +1,161 @@
 body {
-  background-color: rgba(0, 0, 0, 0.5); }
+  height: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif; }
 
-.Portfolio {
-  box-shadow: 5px 5px 15px black; }
-  .Portfolio .Navbar {
-    height: 35px;
-    text-align: right; }
-    .Portfolio .Navbar .navItem {
-      padding: 5px;
-      display: inline-block;
-      cursor: pointer;
-      height: 100%; }
-    .Portfolio .Navbar .currentPage {
-      background: rgba(0, 128, 0, 0.3);
-      box-shadow: 0 0 50px rgba(0, 128, 0, 0.3); }
-  .Portfolio .Home .Header {
-    text-align: center;
-    box-shadow: 5px 5px 25px black;
-    height: 500px;
-    background: url("./../images/img4.jpg"); }
-    .Portfolio .Home .Header .title {
-      margin-top: 5%; }
-      .Portfolio .Home .Header .title * {
-        color: rgba(255, 255, 255, 0.5);
-        font-family: monospace; }
-    .Portfolio .Home .Header .Scroller {
-      height: 50px;
-      width: 100%;
-      background-color: black; }
-  .Portfolio .Home .Body {
-    z-index: -1;
-    padding: 10px;
-    height: 500px;
-    background: url("./../images/proBG.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; }
-    .Portfolio .Home .Body .bio {
-      display: inline-block;
-      height: 90%;
-      border: 5px ridge rgba(173, 216, 230, 0.3);
-      padding: 10px;
-      background: rgba(245, 245, 220, 0.5);
-      border-radius: 10px; }
-      .Portfolio .Home .Body .bio p {
-        text-indent: 75px;
-        margin-top: 15%;
-        align-self: baseline;
-        font-size: 22px;
-        font-family: Times; }
-    .Portfolio .Home .Body .pic {
-      background: url("./../images/pic.png");
-      background-size: cover;
-      border-radius: 50%;
-      display: inline-block;
-      height: 350px;
-      width: 350px;
-      box-shadow: 0 0 20px lightblue;
-      margin-top: 5%; }
-  .Portfolio .Home .Footer {
-    height: 500px;
-    background: url("./../images/img4.jpg"); }
-    .Portfolio .Home .Footer p {
-      display: inline-block;
-      margin-top: 250px;
-      font-size: 20px;
-      color: rgba(255, 255, 255, 0.5); }
-    .Portfolio .Home .Footer .github img {
-      height: 150px;
-      width: 150px; }
-    .Portfolio .Home .Footer .linkedin img {
-      height: 150px;
-      width: 150px; }
-    .Portfolio .Home .Footer .googleplus img {
-      height: 150px;
-      width: 150px; }
-    .Portfolio .Home .Footer .github, .Portfolio .Home .Footer .linkedin, .Portfolio .Home .Footer .googleplus {
-      text-align: center;
-      cursor: pointer;
-      background-size: cover; }
-      .Portfolio .Home .Footer .github img, .Portfolio .Home .Footer .linkedin img, .Portfolio .Home .Footer .googleplus img {
-        margin-top: 35%;
-        box-shadow: 5px 5px 25px black;
-        border-radius: 50%; }
-        .Portfolio .Home .Footer .github img:hover, .Portfolio .Home .Footer .linkedin img:hover, .Portfolio .Home .Footer .googleplus img:hover {
-          box-shadow: inset 0 0 25px black;
-          background: rgba(0, 128, 0, 0.5); }
-  .Portfolio .Work {
-    background: url("./../images/commingSoon.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+html {
+  height: 100%; }
+
+.Portfolio .Navbar {
+  background: linear-gradient(to right, lightgray, gray, silver);
+  height: 35px;
+  text-align: right; }
+  .Portfolio .Navbar .navItem {
     padding: 5px;
-    font-family: "Times new Roman";
-    height: 1000px;
+    display: inline-block;
+    cursor: pointer;
+    height: 100%; }
+  .Portfolio .Navbar .currentPage {
+    background: rgba(0, 128, 0, 0.3); }
+.Portfolio .Home .Header {
+  text-align: center;
+  height: 450px;
+  background: url("./../images/img4.jpg"); }
+  .Portfolio .Home .Header .title {
+    margin-top: 5%; }
+    .Portfolio .Home .Header .title * {
+      color: rgba(255, 255, 255, 0.5);
+      font-family: monospace; }
+  .Portfolio .Home .Header .Scroller {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+.Portfolio .Home .Body {
+  z-index: -1;
+  padding: 10px;
+  height: 450px;
+  background: url("./../images/proBG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .Portfolio .Home .Body .bio {
+    display: inline-block;
+    height: 90%;
+    border: 5px ridge rgba(173, 216, 230, 0.4);
+    padding: 10px;
+    background: rgba(245, 245, 220, 0.5);
+    border-radius: 10px; }
+    .Portfolio .Home .Body .bio p {
+      text-indent: 75px;
+      margin-top: 15%;
+      align-self: baseline;
+      font-size: 22px;
+      font-family: Times; }
+  .Portfolio .Home .Body .pic {
+    background: url("./../images/pic.png");
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    margin-top: 5%; }
+.Portfolio .Home .Footer {
+  height: 450px;
+  background: url("./../images/img4.jpg"); }
+  .Portfolio .Home .Footer p {
+    display: inline-block;
+    margin-top: 225px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.5); }
-    .Portfolio .Work .GameManager {
-      background: url("./../images/img4.jpg");
-      box-shadow: 5px 5px 20px rgba(173, 216, 230, 0.3);
-      padding: 10px;
-      height: 500px; }
-      .Portfolio .Work .GameManager .GMNavbar {
-        box-shadow: inset 0 0 15px black;
-        background: linear-gradient(to top right, silver, gray);
-        color: black;
-        width: 10%;
+  .Portfolio .Home .Footer .github img {
+    height: 150px;
+    width: 150px; }
+  .Portfolio .Home .Footer .linkedin img {
+    height: 150px;
+    width: 150px; }
+  .Portfolio .Home .Footer .googleplus img {
+    height: 150px;
+    width: 150px; }
+  .Portfolio .Home .Footer .github, .Portfolio .Home .Footer .linkedin, .Portfolio .Home .Footer .googleplus {
+    text-align: center;
+    cursor: pointer;
+    background-size: cover; }
+    .Portfolio .Home .Footer .github img, .Portfolio .Home .Footer .linkedin img, .Portfolio .Home .Footer .googleplus img {
+      margin-top: 35%;
+      border-radius: 50%; }
+      .Portfolio .Home .Footer .github img:hover, .Portfolio .Home .Footer .linkedin img:hover, .Portfolio .Home .Footer .googleplus img:hover {
+        background: rgba(0, 128, 0, 0.5); }
+.Portfolio .Work {
+  background-image: url("../images/img4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.6); }
+  .Portfolio .Work h2 {
+    text-decoration: underline;
+    font-weight: bold; }
+  .Portfolio .Work .AppPreview {
+    padding: 10px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    height: 450px; }
+    .Portfolio .Work .AppPreview div {
+      text-align: center;
+      width: 50%;
+      padding: 5px; }
+      .Portfolio .Work .AppPreview div img {
         height: 100%;
-        display: inline-block; }
-        .Portfolio .Work .GameManager .GMNavbar .currentPage {
-          background: rgba(0, 128, 0, 0.3);
-          box-shadow: 0 0 50px rgba(0, 128, 0, 0.3); }
-        .Portfolio .Work .GameManager .GMNavbar .gmNavItem {
-          padding: 5px;
-          display: inline-block;
-          cursor: pointer;
-          width: 100%; }
-      .Portfolio .Work .GameManager .GameWindow {
-        display: inline-block;
+        width: 100%;
+        border: 5px ridge rgba(173, 216, 230, 0.4); }
+        .Portfolio .Work .AppPreview div img:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 0 100px rgba(173, 216, 230, 0.4); }
+      .Portfolio .Work .AppPreview div p {
+        padding: 5px; }
+  .Portfolio .Work .GameManager {
+    height: 450px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px; }
+    .Portfolio .Work .GameManager .GMNavbar {
+      background: linear-gradient(to top right, silver, gray);
+      color: rgba(0, 0, 0, 0.5);
+      width: 10%;
+      height: 100%;
+      display: inline-block; }
+      .Portfolio .Work .GameManager .GMNavbar .currentPage {
+        background: rgba(0, 128, 0, 0.3); }
+      .Portfolio .Work .GameManager .GMNavbar .gmNavItem {
         padding: 5px;
+        display: inline-block;
+        cursor: pointer;
+        width: 100%; }
+    .Portfolio .Work .GameManager .GameWindow {
+      display: inline-block;
+      padding: 15px;
+      height: 100%; }
+      .Portfolio .Work .GameManager .GameWindow .infoWrapper {
+        padding: 10px;
+        background: rgba(173, 216, 230, 0.4); }
+      .Portfolio .Work .GameManager .GameWindow .Game {
+        display: inline-block;
+        height: 100%;
+        cursor: none;
+        background: rgba(173, 216, 230, 0.4); }
+      .Portfolio .Work .GameManager .GameWindow .Nav {
+        vertical-align: top;
+        display: inline-block;
         height: 100%; }
-        .Portfolio .Work .GameManager .GameWindow .infoWrapper {
-          padding: 10px;
-          background: rgba(173, 216, 230, 0.3); }
-        .Portfolio .Work .GameManager .GameWindow .Game {
-          box-shadow: inset 0 0 15px black;
-          display: inline-block;
-          height: 100%;
-          cursor: none;
-          background: rgba(173, 216, 230, 0.3); }
-        .Portfolio .Work .GameManager .GameWindow .Nav {
-          background: rgba(173, 216, 230, 0.3);
-          box-shadow: inset 0 0 15px black;
-          vertical-align: top;
-          display: inline-block;
-          height: 100%; }
-          .Portfolio .Work .GameManager .GameWindow .Nav .currentPage {
-            background: rgba(173, 216, 230, 0.3);
-            box-shadow: 0 0 50px rgba(173, 216, 230, 0.3); }
-          .Portfolio .Work .GameManager .GameWindow .Nav div {
-            margin-top: 5px;
-            text-align: center;
-            padding: 5px;
-            font-size: 26px;
-            height: 45%;
-            cursor: pointer; }
-            .Portfolio .Work .GameManager .GameWindow .Nav div:hover {
-              box-shadow: 0 0 50px rgba(173, 216, 230, 0.3); }
+        .Portfolio .Work .GameManager .GameWindow .Nav .currentPage {
+          background: rgba(173, 216, 230, 0.4); }
+        .Portfolio .Work .GameManager .GameWindow .Nav div {
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          margin-top: 5px;
+          text-align: center;
+          padding: 5px;
+          font-size: 26px;
+          height: 48%;
+          background: rgba(0, 0, 0, 0.5);
+          cursor: pointer; }
 
 /*# sourceMappingURL=index.css.map */

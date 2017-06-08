@@ -1,12 +1,15 @@
+import {randomColor} from './../../../../../helperFunctions';
+
 export default class Brick {
     constructor(){
         this.rowCount = 4;
-        this.colCount = 9;
+        this.colCount = 11;
         this.w = 75;
         this.h = 20;
         this.padding = 10;
         this.offsetTop = 30;
         this.offsetLeft = 30;
+        this.c = randomColor();
         this.bricks = [];
         for(var c = 0; c < this.colCount;c++){
             this.bricks[c] = [];
@@ -26,7 +29,7 @@ export default class Brick {
                     this.bricks[c][r].y = y;
                     _.beginPath();
                     _.rect(x, y, this.w, this.h);
-                    _.fillStyle = 'rgba(lightblue, .3)';
+                    _.fillStyle = this.c;
                     _.fill();
                     _.closePath();
                 }

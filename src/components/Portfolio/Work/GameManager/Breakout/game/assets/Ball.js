@@ -1,10 +1,12 @@
+import {randomColor} from './../../../../../helperFunctions';
+
 export default class Ball {
     constructor(){
         this.x = 240;
         this.y = 160;
         this.r = 10;
         this.pi = Math.PI*2;
-        this.color = 'green';
+        this.c = randomColor();
         this.dx = 2;
         this.dy = -2;
     }
@@ -12,7 +14,7 @@ export default class Ball {
     draw(_){
         _.beginPath();
         _.arc(this.x, this.y, this.r, 0, this.pi);
-        _.fillStyle = this.color;
+        _.fillStyle = this.c;
         _.fill();
         _.closePath();
     }

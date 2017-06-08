@@ -11,7 +11,7 @@ export default class _Scroller {
 
     init(){
         const spacing = 300;
-        const words = ['Javascript','Socket.io','React.js','HTML','CSS','Sass','Node.js','Express.js','Angular.js','Python','Django','Swift','MongoDB','MySQL','Canvas','ES6','Middleware','Deployment','Design', 'Dog Walking']
+        const words = ['Javascript','Socket.io','React.js','HTML','CSS','Sass','Node.js','Express.js','Angular.js','Python','Django','Swift','MongoDB','MySQL','Canvas','ES6','Middleware','Deployment','Design']
         for(var i = 0; i < words.length; i++){
             this.words.push(new Word(words[i], spacing*i))
         }

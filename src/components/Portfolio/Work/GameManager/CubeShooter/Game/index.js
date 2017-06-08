@@ -30,11 +30,11 @@ export default class Game {
             if(on){
                 if(e.key === 'a'){
                     this.hero.controlls.left = true;
-                }else if(e.key == 'd'){
+                }else if(e.key === 'd'){
                     this.hero.controlls.right = true;
-                }else if(e.key == 'w'){
+                }else if(e.key === 'w'){
                     this.hero.controlls.up = true;
-                }else if(e.key == 's'){
+                }else if(e.key === 's'){
                     this.hero.controlls.down = true
                 }
             }
@@ -47,9 +47,9 @@ export default class Game {
                     this.hero.controlls.left = false;
                 }else if(e.key === 'd'){
                     this.hero.controlls.right = false;
-                }else if(e.key == 'w'){
+                }else if(e.key === 'w'){
                     this.hero.controlls.up = false;
-                }else if(e.key == 's'){
+                }else if(e.key === 's'){
                     this.hero.controlls.down = false
                 }
             }
