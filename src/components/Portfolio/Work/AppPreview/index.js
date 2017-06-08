@@ -14,6 +14,7 @@ export default class AppPreview extends React.Component {
                 <div className="description">
                     <h2>{this.props.name}</h2>
                     <p>{this.props.desc}</p>
+                    <a href={this.props.github}>{this.props.github}</a>
                 </div>
             </div>
         );
@@ -24,5 +25,6 @@ AppPreview.propTypes = {
     src:propTypes.string.isRequired,
     href:propTypes.string.isRequired,
     desc:propTypes.string.isRequired,
-    name:propTypes.string.isRequired
+    name:propTypes.string.isRequired,
+    github:propTypes.string.isRequired
 }

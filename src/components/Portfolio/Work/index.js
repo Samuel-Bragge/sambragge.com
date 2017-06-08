@@ -16,7 +16,8 @@ export default class Work extends React.Component {
                     name="Github Battle"
                     src={src}
                     href="https://github-battles-6aa71.firebaseapp.com/"
-                    desc="An app that uses Githubs api to view popular repos and battle your friends to see who has the stronger account."/>
+                    desc="An app that uses Githubs api to view popular repos and battle your friends to see who has the stronger account."
+                    github="https://github.com/Samuel-Bragge/Github-Battle"/>
 
                 <h2>Games</h2>
                 <GameManager/>
